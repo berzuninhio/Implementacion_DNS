@@ -23,7 +23,7 @@ def resolver_ip():
 def hacer_nslookup(direccion):
     print(f"\nEjecutando nslookup para {direccion}...\n")
     resultado = subprocess.run(["nslookup", direccion], capture_output=True, text=True)
-    print(resultado.stdout if resultado.returncode == 0 else "❌ Error ejecutando nslookup")
+    print(resultado.stdout if resultado.returncode == 0 else "Error ejecutando nslookup")
     
 resolver_dominio()
 resolver_ip()
