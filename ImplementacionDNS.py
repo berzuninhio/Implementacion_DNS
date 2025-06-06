@@ -1,6 +1,5 @@
 import dns.resolver
 import dns.reversename
-from nslookup import Nslookup
 import subprocess
 def resolver_dominio():
     dominio = input("Ingresá el nombre de dominio (ej: www.google.com): ")
